@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -e
+echo "---- postbuild: upgrading pip and installing praat-parselmouth first (helps build ordering) ----"
+python -m pip install --upgrade pip
+# Install parselmouth first (bundles Praat; installing early helps avoid ordering build failures)
+pip install praat-parselmouth==0.4.2
+
+echo "---- postbuild: install remaining requirements ----"
+pip install -r requirements.txt
+
+echo "---- postbuild complete ----"

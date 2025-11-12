@@ -1,0 +1,18 @@
+# core UI
+gradio>=3.49.1
+
+# audio & feature extraction
+librosa>=0.10.0
+soundfile>=0.12.1
+praat-parselmouth==0.4.2
+
+# ML & utilities
+numpy>=1.23
+scipy>=1.10
+scikit-learn==1.6.1
+joblib>=1.2
+dill>=0.3.6
+
+# plotting / misc (optional)
+matplotlib>=3.6
+pandas>=1.5
